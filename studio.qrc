@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>studio_proj/studio_proj.uia</file>
+        <file>studio_proj/studio_proj.uip</file>
+    </qresource>
+</RCC>

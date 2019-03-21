@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIP version="5" >
+	<Project >
+		<ProjectSettings author="" company="" presentationWidth="1280" presentationHeight="480" maintainAspect="False" preferKtx="False" >
+			<CustomColors count="16" >#7391ff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff</CustomColors>
+		</ProjectSettings>
+		<BufferData >
+			<ImageBuffer sourcepath="maps/Rpm7.png" hasTransparency="True" />
+			<ImageBuffer sourcepath="maps/kmh260.png" hasTransparency="True" />
+			<ImageBuffer sourcepath="models/roundbg_1/maps/gradient.png" hasTransparency="True" />
+		</BufferData>
+		<Classes >
+			<Effect id="VignetteEffect" name="VignetteEffect" sourcepath="effects/VignetteEffect.effect" />
+		</Classes>
+		<Graph >
+			<Scene id="Scene" backgroundcolor="0.52549 0.52549 0.52549" bgcolorenable="False" controlledproperty="$slide @slide" >
+				<Layer id="Cluster3D2" >
+					<Camera id="Camera_002" />
+					<Group id="Cluster_001" >
+						<Group id="Background_001" />
+						<Group id="MainGauges" >
+							<Group id="LeftGauge_001" >
+								<Group id="GaugeBackground" >
+									<Group id="roundbg_1" importid="__import__root__" >
+										<Model id="qt_gauge_background_round_1" name="qt_gauge_background_round_1" importid="qt_gauge_background_round_1" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/roundbg_1/meshes/qt_gauge_background_round_1.mesh" >
+											<Material id="background_1" name="background_1" blendmode="Normal" diffuse="1 1 1" diffusemap="#background_1_diffusemap" emissivepower="0" importid="background_1" opacity="100" specularamount="0" >
+												<Image id="background_1_diffusemap" name="background_1_diffusemap" importid="background_1_diffusemap" sourcepath="models/roundbg_1/maps/gradient.png" />
+												<Image id="background_1_specularreflection" />
+											</Material>
+										</Model>
+									</Group>
+									<Group id="Ring_2" importid="__import__root__" >
+										<Model id="qt_gauge_ring_2" name="qt_gauge_ring_2" importid="qt_gauge_ring_2" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/Ring_2/meshes/qt_gauge_ring_2.mesh" >
+											<Material id="Default_white" name="Default_white" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="Default_white" opacity="100" specularamount="0" >
+												<Image id="Default_white_specularreflection" />
+											</Material>
+										</Model>
+									</Group>
+								</Group>
+								<Component id="GaugeNeedle" >
+									<Group id="GaugeNeedle_001" >
+										<Light id="Light" />
+										<Group id="needle_2" importid="__import__root__" >
+											<Model id="qt_gauge_needles_2" name="qt_gauge_needles_2" importid="qt_gauge_needles_2" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/needle_2/meshes/qt_gauge_needles_2.mesh" >
+												<Material id="qt_gauge_needles:red_transparent" name="qt_gauge_needles:red_transparent" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="qt_gauge_needles:red_transparent" opacity="100" specularamount="0" />
+												<Material id="qt_gauge_needles:black_solid" name="qt_gauge_needles:black_solid" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="qt_gauge_needles:black_solid" opacity="100" specularamount="0" />
+												<Material id="qt_gauge_needles:solidWhite" name="qt_gauge_needles:solidWhite" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="qt_gauge_needles:solidWhite" opacity="100" specularamount="0" >
+													<Image id="qt_gauge_needles:solidWhite_specularreflection" />
+												</Material>
+											</Model>
+										</Group>
+									</Group>
+								</Component>
+								<Group id="GaugeTickmarks" >
+									<Group id="tickmark_260" importid="__import__root__" >
+										<Model id="qt_gauge_tickmarks_260" name="qt_gauge_tickmarks_260" importid="qt_gauge_tickmarks_260" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/tickmark_260/meshes/qt_gauge_tickmarks_260.mesh" >
+											<Material id="Default_white_001" name="Default_white" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="Default_white" opacity="100" specularamount="0" />
+										</Model>
+									</Group>
+								</Group>
+								<Group id="GaugeNumbers" >
+									<Model id="kmh260" >
+										<Material id="Material_003" >
+											<Image id="Material_003_diffusemap" />
+										</Material>
+									</Model>
+								</Group>
+							</Group>
+							<Group id="RightGauge_001" >
+								<Group id="GaugeBackground_001" >
+									<Group id="roundbg_1_001" importid="__import__root__" >
+										<Model id="qt_gauge_background_round_1_001" name="qt_gauge_background_round_1" importid="qt_gauge_background_round_1" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/roundbg_1/meshes/qt_gauge_background_round_1.mesh" >
+											<Material id="background_1_001" name="background_1" blendmode="Normal" diffuse="1 1 1" diffusemap="#background_1_001_diffusemap" emissivepower="0" importid="background_1" opacity="100" specularamount="0" >
+												<Image id="background_1_001_diffusemap" name="background_1_diffusemap" importid="background_1_diffusemap" sourcepath="models/roundbg_1/maps/gradient.png" />
+												<Image id="background_1_001_specularreflection" />
+											</Material>
+										</Model>
+									</Group>
+									<Group id="Ring_2_001" importid="__import__root__" >
+										<Model id="qt_gauge_ring_2_001" name="qt_gauge_ring_2" importid="qt_gauge_ring_2" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/Ring_2/meshes/qt_gauge_ring_2.mesh" >
+											<Material id="Default_white_002" name="Default_white" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="Default_white" opacity="100" specularamount="0" >
+												<Image id="Default_white_002_specularreflection" />
+											</Material>
+										</Model>
+									</Group>
+								</Group>
+								<Component id="GaugeNeedle_002" >
+									<Group id="GaugeNeedle_003" >
+										<Light id="Light_002" />
+										<Group id="needle_2_001" importid="__import__root__" >
+											<Model id="qt_gauge_needles_2_001" name="qt_gauge_needles_2" importid="qt_gauge_needles_2" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/needle_2/meshes/qt_gauge_needles_2.mesh" >
+												<Material id="qt_gauge_needles:red_transparent_001" name="qt_gauge_needles:red_transparent" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="qt_gauge_needles:red_transparent" opacity="100" specularamount="0" />
+												<Material id="qt_gauge_needles:black_solid_001" name="qt_gauge_needles:black_solid" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="qt_gauge_needles:black_solid" opacity="100" specularamount="0" />
+												<Material id="qt_gauge_needles:solidWhite_001" name="qt_gauge_needles:solidWhite" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="qt_gauge_needles:solidWhite" opacity="100" specularamount="0" >
+													<Image id="qt_gauge_needles:solidWhite_001_specularreflection" />
+												</Material>
+											</Model>
+										</Group>
+									</Group>
+								</Component>
+								<Group id="GaugeTickmarks_001" >
+									<Group id="tickmark_8_small" importid="__import__root__" >
+										<Model id="qt_gauge_tickmarks_8_small" name="qt_gauge_tickmarks_8_small" importid="qt_gauge_tickmarks_8_small" orientation="Right Handed" position="0 0 -0" rotation="0 -0 0" rotationorder="XYZr" scale="1 1 1" sourcepath="models/tickmark_8_small/meshes/qt_gauge_tickmarks_8_small.mesh" >
+											<Material id="Default_white_003" name="Default_white" blendmode="Normal" diffuse="1 1 1" emissivepower="0" importid="Default_white" opacity="100" specularamount="0" />
+										</Model>
+									</Group>
+								</Group>
+								<Group id="GaugeNumbers_001" >
+									<Model id="Rpm7" >
+										<Material id="Material_004" >
+											<Image id="Material_004_diffusemap" />
+										</Material>
+									</Model>
+								</Group>
+								<Group id="GaugeText_001" />
+							</Group>
+						</Group>
+					</Group>
+				</Layer>
+				<Layer id="Road3D" >
+					<Camera id="Camera_004" />
+					<Light id="Light_001" />
+					<Effect id="VignetteEffect_002" class="#VignetteEffect" />
+					<Component id="Rectangle" >
+						<Model id="Rectangle_001" >
+							<Material id="Default" name="Default" >
+								<Image id="Default_diffusemap" />
+							</Material>
+						</Model>
+					</Component>
+				</Layer>
+				<Layer id="BackgroundContent" >
+					<Camera id="Camera_001" />
+					<Light id="Light_003" />
+					<Effect id="VignetteEffect_001" class="#VignetteEffect" />
+					<Component id="Map" >
+						<Model id="Map_001" >
+							<Material id="Material" >
+								<Image id="Material_diffusemap" />
+							</Material>
+						</Model>
+					</Component>
+				</Layer>
+			</Scene>
+		</Graph>
+		<Logic >
+			<State name="Master Slide" component="#Scene" >
+				<Add ref="#Cluster3D2" name="Cluster3D" aodither="False" disabledepthprepass="False" disabledepthtest="False" multisampleaa="SSAA" probe2fade="1" probebright="231" probefov="169.26" probehorizon="-1" progressiveaa="8x" temporalaa="True" />
+				<Add ref="#Camera_002" fov="8.16" position="0 0 -435" />
+				<Add ref="#Cluster_001" name="Cluster" position="0 0 0" />
+				<Add ref="#Background_001" name="Background" position="0 0 0" rotation="-90 0 0" scale="1.2 1.2 1.2" />
+				<Add ref="#MainGauges" name="MainGauges" />
+				<Add ref="#LeftGauge_001" name="LeftGauge" position="-52 0 0" rotation="-60 -30 0" scale="2 2 2" />
+				<Add ref="#GaugeBackground" name="GaugeBackground" locked="False" position="0 0 0" scale="1 1 1" />
+				<Add ref="#roundbg_1" name="roundbg_1" importfile="models/roundbg_1/roundbg_1.import" locked="False" scale="0.9 0.9 0.9" sourcepath="models/roundbg_1/roundbg_1.import" />
+				<Add ref="#qt_gauge_background_round_1" importfile="models/roundbg_1/roundbg_1.import" locked="False" />
+				<Add ref="#background_1" bumpamount="1" importfile="models/roundbg_1/roundbg_1.import" ior="0.18" locked="False" specularamount="0.5" specularreflection="#background_1_specularreflection" specularroughness="0.321" />
+				<Add ref="#background_1_diffusemap" importfile="models/roundbg_1/roundbg_1.import" locked="False" sourcepath="maps/gradient_lines_001.png" />
+				<Add ref="#background_1_specularreflection" locked="False" mappingmode="Environmental Mapping" sourcepath="maps/OpenfootageNET_garage-512.hdr" />
+				<Add ref="#Ring_2" name="Ring_2" importfile="models/Ring_2/Ring_2.import" locked="False" sourcepath="models/Ring_2/Ring_2.import" />
+				<Add ref="#qt_gauge_ring_2" importfile="models/Ring_2/Ring_2.import" locked="False" />
+				<Add ref="#Default_white" diffuse="0.0980392 0.0980392 0.0980392" importfile="models/Ring_2/Ring_2.import" locked="False" specularamount="1" specularreflection="#Default_white_specularreflection" />
+				<Add ref="#Default_white_specularreflection" locked="False" mappingmode="Environmental Mapping" sourcepath="maps/OpenfootageNET_garage-512.hdr" />
+				<Add ref="#GaugeNeedle" name="GaugeNeedle" controlledproperty="$speed @timeline" position="0 -2.5 0" rotation="0 -255 0" />
+				<Add ref="#GaugeTickmarks" name="GaugeTickmarks" />
+				<Add ref="#tickmark_260" name="tickmark_260" importfile="models/tickmark_260/tickmark_260.import" sourcepath="models/tickmark_260/tickmark_260.import" />
+				<Add ref="#qt_gauge_tickmarks_260" importfile="models/tickmark_260/tickmark_260.import" />
+				<Add ref="#Default_white_001" diffuse="1 1 1" importfile="models/tickmark_260/tickmark_260.import" />
+				<Add ref="#GaugeNumbers" name="GaugeNumbers" position="0.597784 2 0.170977" rotation="90 0 0" scale="0.17 0.17 0.17" />
+				<Add ref="#kmh260" name="kmh260" position="1.52588e-05 -3.8147e-06 11.4355" rotation="0 0 0" scale="1.024 1.024 1" sourcepath="#Rectangle" />
+				<Add ref="#Material_003" bumpamount="0.5" diffusemap="#Material_003_diffusemap" emissivepower="0" shaderlighting="None" />
+				<Add ref="#Material_003_diffusemap" sourcepath="maps/kmh260.png" />
+				<Add ref="#RightGauge_001" name="RightGauge" position="52 0 0" rotation="-60 30 0" scale="2 2 2" />
+				<Add ref="#GaugeBackground_001" name="GaugeBackground" position="0 0 0" scale="1 1 1" />
+				<Add ref="#roundbg_1_001" name="roundbg_1" importfile="models/roundbg_1/roundbg_1.import" scale="0.9 0.9 0.9" sourcepath="models/roundbg_1/roundbg_1.import" />
+				<Add ref="#qt_gauge_background_round_1_001" importfile="models/roundbg_1/roundbg_1.import" />
+				<Add ref="#background_1_001" bumpamount="1" importfile="models/roundbg_1/roundbg_1.import" ior="0.19" specularamount="0.5" specularreflection="#background_1_001_specularreflection" specularroughness="0.31069" />
+				<Add ref="#background_1_001_diffusemap" importfile="models/roundbg_1/roundbg_1.import" sourcepath="maps/gradient_lines_001.png" />
+				<Add ref="#background_1_001_specularreflection" mappingmode="Environmental Mapping" sourcepath="maps/OpenfootageNET_garage-512.hdr" />
+				<Add ref="#Ring_2_001" name="Ring_2" importfile="models/Ring_2/Ring_2.import" sourcepath="models/Ring_2/Ring_2.import" />
+				<Add ref="#qt_gauge_ring_2_001" importfile="models/Ring_2/Ring_2.import" />
+				<Add ref="#Default_white_002" diffuse="0.0980392 0.0980392 0.0980392" importfile="models/Ring_2/Ring_2.import" specularamount="1" specularreflection="#Default_white_002_specularreflection" />
+				<Add ref="#Default_white_002_specularreflection" mappingmode="Environmental Mapping" sourcepath="maps/OpenfootageNET_garage-512.hdr" />
+				<Add ref="#GaugeNeedle_002" name="GaugeNeedle" controlledproperty="$rpm @timeline" position="0 0.5 0" />
+				<Add ref="#GaugeTickmarks_001" name="GaugeTickmarks" />
+				<Add ref="#tickmark_8_small" name="tickmark_8_small" importfile="models/tickmark_8_small/tickmark_8_small.import" scale="1.3 1.3 1.3" sourcepath="models/tickmark_8_small/tickmark_8_small.import" />
+				<Add ref="#qt_gauge_tickmarks_8_small" importfile="models/tickmark_8_small/tickmark_8_small.import" />
+				<Add ref="#Default_white_003" importfile="models/tickmark_8_small/tickmark_8_small.import" />
+				<Add ref="#GaugeNumbers_001" name="GaugeNumbers" rotation="90 0 0" scale="0.17 0.17 0.17" />
+				<Add ref="#Rpm7" name="Rpm7" position="1.77449 4.30839 0" scale="1.24 1.24 1.24" sourcepath="#Rectangle" />
+				<Add ref="#Material_004" diffusemap="#Material_004_diffusemap" shaderlighting="None" />
+				<Add ref="#Material_004_diffusemap" sourcepath="maps/Rpm7.png" />
+				<Add ref="#GaugeText_001" name="GaugeText" />
+				<Add ref="#Road3D" name="Road3D" aodither="False" aostrength="0" disabledepthprepass="False" disabledepthtest="False" height="60" heightunits="percent" left="20" leftunits="percent" multisampleaa="SSAA" progressiveaa="8x" temporalaa="True" top="20" topunits="percent" width="60" widthunits="percent" />
+				<Add ref="#Camera_004" fov="51.12" orthographic="False" scaleanchor="Center" />
+				<Add ref="#Light_001" name="Light" brightness="200" expfade="0" lighttype="Point" position="0 0 -575" />
+				<Add ref="#VignetteEffect_002" name="VignetteEffect" vig_color="0 0 0" vig_radius="0.4" vig_strenght="15" />
+				<Add ref="#Rectangle" name="Rectangle" scale="0.8 0.8 0.8" />
+				<Add ref="#BackgroundContent" name="Map" aodither="False" aostrength="0" disabledepthprepass="False" disabledepthtest="False" height="60" heightunits="percent" left="20" leftunits="percent" multisampleaa="None" progressiveaa="None" temporalaa="False" top="20" topunits="percent" width="60" widthunits="percent" />
+				<Add ref="#Camera_001" fov="4.58" />
+				<Add ref="#Light_003" name="Light" lighttype="Point" position="0 0 -23" />
+				<Add ref="#VignetteEffect_001" name="VignetteEffect" vig_color="0 0 0" vig_radius="0.3" vig_strenght="15" />
+				<Add ref="#Map" name="Map" />
+				<State id="Scene-Front" name="Front" initialplaystate="Pause" playmode="Stop at end" playthroughto="Next" >
+					<Set ref="#Cluster3D2" endtime="4000" />
+					<Set ref="#Camera_002" endtime="4000" />
+					<Set ref="#Cluster_001" endtime="4000" />
+					<Set ref="#Background_001" endtime="4000" />
+					<Set ref="#MainGauges" endtime="4000" />
+					<Set ref="#LeftGauge_001" endtime="4000" rotation="-90 0 0" >
+						<AnimationTrack property="rotation.x" type="EaseInOut" dynamic="True" />
+						<AnimationTrack property="rotation.y" type="EaseInOut" dynamic="True" />
+						<AnimationTrack property="rotation.z" type="EaseInOut" dynamic="True" />
+					</Set>
+					<Set ref="#GaugeBackground" endtime="4000" />
+					<Set ref="#roundbg_1" endtime="4000" />
+					<Set ref="#qt_gauge_background_round_1" endtime="4000" />
+					<Set ref="#Ring_2" endtime="4000" />
+					<Set ref="#qt_gauge_ring_2" endtime="4000" />
+					<Set ref="#GaugeNeedle" endtime="4000" />
+					<Set ref="#GaugeTickmarks" endtime="4000" />
+					<Set ref="#tickmark_260" endtime="4000" />
+					<Set ref="#qt_gauge_tickmarks_260" endtime="4000" />
+					<Set ref="#GaugeNumbers" endtime="4000" />
+					<Set ref="#kmh260" endtime="4000" />
+					<Set ref="#RightGauge_001" endtime="4000" rotation="-90 0 0" >
+						<AnimationTrack property="rotation.x" type="EaseInOut" dynamic="True" />
+						<AnimationTrack property="rotation.y" type="EaseInOut" dynamic="True" />
+						<AnimationTrack property="rotation.z" type="EaseInOut" dynamic="True" />
+					</Set>
+					<Set ref="#GaugeBackground_001" endtime="4000" />
+					<Set ref="#roundbg_1_001" endtime="4000" />
+					<Set ref="#qt_gauge_background_round_1_001" endtime="4000" />
+					<Set ref="#Ring_2_001" endtime="4000" />
+					<Set ref="#qt_gauge_ring_2_001" endtime="4000" />
+					<Set ref="#GaugeNeedle_002" endtime="4000" />
+					<Set ref="#GaugeTickmarks_001" endtime="4000" />
+					<Set ref="#tickmark_8_small" endtime="4000" />
+					<Set ref="#qt_gauge_tickmarks_8_small" endtime="4000" />
+					<Set ref="#GaugeNumbers_001" endtime="4000" />
+					<Set ref="#Rpm7" endtime="4000" />
+					<Set ref="#GaugeText_001" endtime="4000" />
+					<Set ref="#Road3D" endtime="4000" eyeball="False" />
+					<Set ref="#Camera_004" endtime="4000" />
+					<Set ref="#Light_001" endtime="4000" />
+					<Set ref="#VignetteEffect_002" endtime="4000" />
+					<Set ref="#Rectangle" endtime="4000" />
+					<Set ref="#BackgroundContent" endtime="4000" eyeball="False" />
+					<Set ref="#Camera_001" endtime="4000" />
+					<Set ref="#Light_003" endtime="4000" />
+					<Set ref="#VignetteEffect_001" endtime="4000" />
+					<Set ref="#Map" endtime="4000" />
+				</State>
+				<State id="Scene-InitialState" name="InitialState" controlledproperty="" initialplaystate="Play" playmode="Stop at end" playthroughto="Previous" >
+					<Set ref="#Cluster3D2" endtime="3000" />
+					<Set ref="#Camera_002" endtime="3000" />
+					<Set ref="#Cluster_001" endtime="3000" />
+					<Set ref="#Background_001" endtime="3000" />
+					<Set ref="#MainGauges" endtime="3000" />
+					<Set ref="#LeftGauge_001" endtime="3000" rotation="-90 0 0" >
+						<AnimationTrack property="rotation.x" type="EaseInOut" dynamic="True" >0 -60 100 100 1 -90 100 100</AnimationTrack>
+						<AnimationTrack property="rotation.y" type="EaseInOut" dynamic="True" >0 -30 100 100 1 0 100 100</AnimationTrack>
+						<AnimationTrack property="rotation.z" type="EaseInOut" dynamic="True" >0 0 100 100 1 0 100 100</AnimationTrack>
+					</Set>
+					<Set ref="#GaugeBackground" endtime="3000" />
+					<Set ref="#roundbg_1" endtime="3000" />
+					<Set ref="#qt_gauge_background_round_1" endtime="3000" />
+					<Set ref="#Ring_2" endtime="3000" />
+					<Set ref="#qt_gauge_ring_2" endtime="3000" />
+					<Set ref="#GaugeNeedle" endtime="3000" />
+					<Set ref="#GaugeTickmarks" endtime="3000" />
+					<Set ref="#tickmark_260" endtime="3000" />
+					<Set ref="#qt_gauge_tickmarks_260" endtime="3000" />
+					<Set ref="#GaugeNumbers" endtime="3000" />
+					<Set ref="#kmh260" endtime="3000" />
+					<Set ref="#RightGauge_001" endtime="3000" rotation="-90 0 0" >
+						<AnimationTrack property="rotation.x" type="EaseInOut" dynamic="True" >0 -60 100 100 1 -90 100 100</AnimationTrack>
+						<AnimationTrack property="rotation.y" type="EaseInOut" dynamic="True" >0 30 100 100 1 0 100 100</AnimationTrack>
+						<AnimationTrack property="rotation.z" type="EaseInOut" dynamic="True" >0 0 100 100 1 0 100 100</AnimationTrack>
+					</Set>
+					<Set ref="#GaugeBackground_001" endtime="3000" />
+					<Set ref="#roundbg_1_001" endtime="3000" />
+					<Set ref="#qt_gauge_background_round_1_001" endtime="3000" />
+					<Set ref="#Ring_2_001" endtime="3000" />
+					<Set ref="#qt_gauge_ring_2_001" endtime="3000" />
+					<Set ref="#GaugeNeedle_002" endtime="3000" />
+					<Set ref="#GaugeTickmarks_001" endtime="3000" />
+					<Set ref="#tickmark_8_small" endtime="3000" />
+					<Set ref="#qt_gauge_tickmarks_8_small" endtime="3000" />
+					<Set ref="#GaugeNumbers_001" endtime="3000" />
+					<Set ref="#Rpm7" endtime="3000" />
+					<Set ref="#GaugeText_001" endtime="3000" />
+					<Set ref="#Road3D" endtime="3000" eyeball="False" />
+					<Set ref="#Camera_004" endtime="3000" />
+					<Set ref="#Light_001" endtime="3000" />
+					<Set ref="#VignetteEffect_002" endtime="3000" />
+					<Set ref="#Rectangle" endtime="3000" />
+					<Set ref="#BackgroundContent" endtime="3000" />
+					<Set ref="#Camera_001" endtime="3000" />
+					<Set ref="#Light_003" endtime="3000" />
+					<Set ref="#VignetteEffect_001" endtime="3000" />
+					<Set ref="#Map" endtime="3000" />
+				</State>
+				<State id="Scene-Angle" name="Angle" initialplaystate="Play" playmode="Stop at end" playthroughto="Previous" >
+					<Set ref="#Cluster3D2" endtime="3000" />
+					<Set ref="#Camera_002" endtime="3000" />
+					<Set ref="#Cluster_001" endtime="3000" />
+					<Set ref="#Background_001" endtime="3000" />
+					<Set ref="#MainGauges" endtime="3000" />
+					<Set ref="#LeftGauge_001" endtime="3000" rotation="-60 -30 0" >
+						<AnimationTrack property="rotation.x" type="EaseInOut" dynamic="True" >0 -90 0 0 1 -60 0 0</AnimationTrack>
+						<AnimationTrack property="rotation.y" type="EaseInOut" dynamic="True" >0 0 0 0 1 -30 0 0</AnimationTrack>
+						<AnimationTrack property="rotation.z" type="EaseInOut" dynamic="True" >0 0 0 0 1 0 0 0</AnimationTrack>
+					</Set>
+					<Set ref="#GaugeBackground" endtime="3000" />
+					<Set ref="#roundbg_1" endtime="3000" />
+					<Set ref="#qt_gauge_background_round_1" endtime="3000" />
+					<Set ref="#Ring_2" endtime="3000" />
+					<Set ref="#qt_gauge_ring_2" endtime="3000" />
+					<Set ref="#GaugeNeedle" endtime="3000" />
+					<Set ref="#GaugeTickmarks" endtime="3000" />
+					<Set ref="#tickmark_260" endtime="3000" />
+					<Set ref="#qt_gauge_tickmarks_260" endtime="3000" />
+					<Set ref="#GaugeNumbers" endtime="3000" />
+					<Set ref="#kmh260" endtime="3000" />
+					<Set ref="#RightGauge_001" endtime="3000" rotation="-60 30 0" >
+						<AnimationTrack property="rotation.x" type="EaseInOut" dynamic="True" >0 -90 0 0 1 -60 0 0</AnimationTrack>
+						<AnimationTrack property="rotation.y" type="EaseInOut" dynamic="True" >0 0 0 0 1 30 0 0</AnimationTrack>
+						<AnimationTrack property="rotation.z" type="EaseInOut" dynamic="True" >0 0 0 0 1 0 0 0</AnimationTrack>
+					</Set>
+					<Set ref="#GaugeBackground_001" endtime="3000" />
+					<Set ref="#roundbg_1_001" endtime="3000" />
+					<Set ref="#qt_gauge_background_round_1_001" endtime="3000" />
+					<Set ref="#Ring_2_001" endtime="3000" />
+					<Set ref="#qt_gauge_ring_2_001" endtime="3000" />
+					<Set ref="#GaugeNeedle_002" endtime="3000" />
+					<Set ref="#GaugeTickmarks_001" endtime="3000" />
+					<Set ref="#tickmark_8_small" endtime="3000" />
+					<Set ref="#qt_gauge_tickmarks_8_small" endtime="3000" />
+					<Set ref="#GaugeNumbers_001" endtime="3000" />
+					<Set ref="#Rpm7" endtime="3000" />
+					<Set ref="#GaugeText_001" endtime="3000" />
+					<Set ref="#Road3D" endtime="3000" eyeball="False" />
+					<Set ref="#Camera_004" endtime="3000" />
+					<Set ref="#Light_001" endtime="3000" />
+					<Set ref="#VignetteEffect_002" endtime="3000" />
+					<Set ref="#Rectangle" endtime="3000" />
+					<Set ref="#BackgroundContent" endtime="3000" />
+					<Set ref="#Camera_001" endtime="3000" />
+					<Set ref="#Light_003" endtime="3000" />
+					<Set ref="#VignetteEffect_001" endtime="3000" />
+					<Set ref="#Map" endtime="3000" />
+				</State>
+			</State>
+			<State name="Master Slide" component="#GaugeNeedle" >
+				<Add ref="#GaugeNeedle_001" name="GaugeNeedle" controlledproperty="$speedNeedle rotation" endtime="3000" position="0 3 1.31134e-07" rotation="0 -136 0" scale="0.9 0.9 0.9" />
+				<Add ref="#Light" name="Light" brightness="100" endtime="3000" lighttype="Point" position="0 10 12" />
+				<Add ref="#needle_2" name="needle_2" endtime="3000" importfile="models/needle_2/needle_2.import" sourcepath="models/needle_2/needle_2.import" />
+				<Add ref="#qt_gauge_needles_2" endtime="3000" importfile="models/needle_2/needle_2.import" />
+				<Add ref="#qt_gauge_needles:red_transparent" diffuse="1 1 1" importfile="models/needle_2/needle_2.import" shaderlighting="None" />
+				<Add ref="#qt_gauge_needles:black_solid" diffuse="0.34902 0.34902 0.34902" importfile="models/needle_2/needle_2.import" />
+				<Add ref="#qt_gauge_needles:solidWhite" diffuse="0 0 0" importfile="models/needle_2/needle_2.import" specularamount="2.5" specularreflection="#qt_gauge_needles:solidWhite_specularreflection" />
+				<Add ref="#qt_gauge_needles:solidWhite_specularreflection" mappingmode="Environmental Mapping" sourcepath="maps/OpenfootageNET_garage-512.hdr" />
+				<State id="GaugeNeedle-Slide1" name="Slide1" initialplaystate="Pause" playmode="PingPong" />
+			</State>
+			<State name="Master Slide" component="#GaugeNeedle_002" >
+				<Add ref="#GaugeNeedle_003" name="GaugeNeedle" endtime="3000" rotation="4.07111e-13 -136 4.07111e-13" scale="0.9 0.9 0.9" >
+					<AnimationTrack property="rotation.x" type="EaseInOut" />
+					<AnimationTrack property="rotation.y" type="EaseInOut" />
+					<AnimationTrack property="rotation.z" type="EaseInOut" />
+				</Add>
+				<Add ref="#Light_002" name="Light" brightness="100" endtime="3000" lighttype="Point" position="0 10 12" />
+				<Add ref="#needle_2_001" name="needle_2" endtime="3000" importfile="models/needle_2/needle_2.import" sourcepath="models/needle_2/needle_2.import" />
+				<Add ref="#qt_gauge_needles_2_001" endtime="3000" importfile="models/needle_2/needle_2.import" />
+				<Add ref="#qt_gauge_needles:red_transparent_001" importfile="models/needle_2/needle_2.import" shaderlighting="None" />
+				<Add ref="#qt_gauge_needles:black_solid_001" diffuse="0.34902 0.34902 0.34902" importfile="models/needle_2/needle_2.import" shaderlighting="Pixel" />
+				<Add ref="#qt_gauge_needles:solidWhite_001" diffuse="0 0 0" importfile="models/needle_2/needle_2.import" specularamount="2.5" specularreflection="#qt_gauge_needles:solidWhite_001_specularreflection" />
+				<Add ref="#qt_gauge_needles:solidWhite_001_specularreflection" mappingmode="Environmental Mapping" sourcepath="maps/OpenfootageNET_garage-512.hdr" />
+				<State id="GaugeNeedle-Slide1_001" name="Slide1" initialplaystate="Pause" playmode="PingPong" >
+					<Set ref="#GaugeNeedle_003" endtime="7000" />
+					<Set ref="#Light_002" endtime="7000" />
+					<Set ref="#needle_2_001" endtime="7000" />
+					<Set ref="#qt_gauge_needles_2_001" endtime="7000" />
+				</State>
+			</State>
+			<State name="Master Slide" component="#Rectangle" >
+				<Add ref="#Rectangle_001" name="Rectangle" endtime="3000" opacity="100" position="0 -15 -518" rotation="90 0 0" scale="0.586792 95.052 1" sourcepath="#Rectangle" />
+				<Add ref="#Default" diffusemap="#Default_diffusemap" />
+				<Add ref="#Default_diffusemap" scalev="100" sourcepath="maps/road.png" tilingmodehorz="Tiled" tilingmodevert="Tiled" >
+					<AnimationTrack property="positionv" type="EaseInOut" >0 0 0 0 4 0.1 0 0</AnimationTrack>
+				</Add>
+				<State id="Rectangle-Slide1" name="Slide1" initialplaystate="Pause" playmode="Looping" >
+					<Set ref="#Rectangle_001" endtime="4000" />
+				</State>
+			</State>
+			<State name="Master Slide" component="#Map" >
+				<Add ref="#Map_001" name="Map" edgetess="1" endtime="3000" innertess="64" position="0 0 0" rotation="60 0 0" scale="1.4 1.4 1" sourcepath="#Rectangle" tessellation="None" />
+				<Add ref="#Material" bumpamount="4.5" diffuselightwrap="0.24" diffusemap="#Material_diffusemap" displaceamount="0" fresnelPower="0" ior="0.17" opacity="100" shaderlighting="Pixel" specularamount="0.05" specularmodel="Default" specularroughness="0.11089" speculartint="0.607843 0.607843 0.607843" />
+				<Add ref="#Material_diffusemap" scaleu="1" scalev="1" sourcepath="scripts/Map.jpg" subpresentation="" tilingmodehorz="Tiled" tilingmodevert="Tiled" />
+				<State id="Map-Slide1" name="Slide1" initialplaystate="Pause" playmode="Looping" >
+					<Set ref="#Map_001" endtime="25000" />
+				</State>
+			</State>
+		</Logic>
+	</Project>
+</UIP>

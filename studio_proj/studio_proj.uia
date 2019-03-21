@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<application>
+	<assets initial="studio_proj">
+		<presentation id="studio_proj" src="studio_proj.uip"/>
+		<presentation-qml id="sub-presentation-id" args="../rectangle1.qml"/>
+	</assets>
+	<statemachine ref="#logic">
+		<visual-states>
+			<state ref="Initial">
+				<enter>
+					<goto-slide element="main:Scene" rel="next"/>
+				</enter>
+			</state>
+		</visual-states>
+	</statemachine>
+</application>

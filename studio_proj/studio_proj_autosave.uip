@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIP version="4" >
+	<Project >
+		<ProjectSettings author="" company="" presentationWidth="1920" presentationHeight="1080" maintainAspect="False" >
+			<CustomColors count="16" >#ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff</CustomColors>
+		</ProjectSettings>
+		<Graph >
+			<Scene id="Scene" bgcolorenable="True" >
+				<Layer id="Layer" >
+					<Camera id="Camera" />
+					<Light id="Light" />
+					<Model id="Cube" >
+						<Material id="Default" name="Default" />
+					</Model>
+				</Layer>
+			</Scene>
+		</Graph>
+		<Logic >
+			<State name="Master Slide" component="#Scene" >
+				<Add ref="#Layer" multisampleaa="SSAA" progressiveaa="8x" sourcepath="" temporalaa="True" />
+				<Add ref="#Camera" />
+				<Add ref="#Light" />
+				<State id="Scene-Slide1" name="Slide1" initialplaystate="Play" >
+					<Add ref="#Cube" name="Cube" position="330.899 -133.353 0" scale="40 30 1" sourcepath="#Cube" />
+					<Add ref="#Default" diffuse="1 0 0.0156863" />
+				</State>
+			</State>
+		</Logic>
+	</Project>
+</UIP>

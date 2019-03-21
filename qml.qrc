@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AnimationValues.qml</file>
+        <file>MainCluster.qml</file>
+    </qresource>
+</RCC>

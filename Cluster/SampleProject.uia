@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<application>
+    <assets initial="SampleProject">
+        <presentation id="SampleProject" src="SampleProject.uip"/>
+        <dataInput type="String" name="dateAndTime"/>
+        <dataInput max="7" type="Ranged Number" min="0" name="rpm"/>
+        <dataInput type="String" name="slide"/>
+        <dataInput max="260" type="Ranged Number" min="0" name="speed"/>
+        <dataInput type="Vector3" name="speedNeedle"/>
+    </assets>
+    <statemachine ref="#logic">
+        <visual-states>
+            <state ref="Initial">
+                <enter>
+                    <goto-slide rel="next" element="main:Scene"/>
+                </enter>
+            </state>
+        </visual-states>
+    </statemachine>
+</application>
